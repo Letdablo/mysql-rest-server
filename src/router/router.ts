@@ -3,8 +3,8 @@ import MySQL from '../database/mysql';
 const router = Router();
 
 
-router.get('/heroes', (req:Request, res:Response) => {
-    const query = `SELECT * FROM heroes`;
+router.get('/users', (req:Request, res:Response) => {
+    const query = `SELECT * FROM users`;
     MySQL.query(query, (err:Error, results:Object[])=>{
         if(err){
             res.status(400).json({
@@ -21,8 +21,8 @@ router.get('/heroes', (req:Request, res:Response) => {
     });
 });
 
-router.get('/heroes/:id', (req:Request, res:Response) => {
-    const query = `SELECT * FROM heroes WHERE id=${MySQL.escape(req.params.id)}`
+router.get('/users/:id', (req:Request, res:Response) => {
+    const query = `SELECT * FROM users_laboratory_tests WHERE user_id=${MySQL.escape(req.params.id)}`
     MySQL.query(query, (err:Error, results:Object[]) => {
         if(err){
             return res.status(400).json({
