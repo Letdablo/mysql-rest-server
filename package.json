@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc ",
-    "dev": "npm run build && nodemon dist"
+    "dev": "npm run build && nodemon dist",
+    "start": "node index.js"
   },
   "author": "cristiancosano",
   "license": "ISC",
