@@ -19,6 +19,6 @@
     "@types/mysql": "^2.15.8",
     "copyfiles": "^2.1.1",
     "ts-node": "^3.3.0",
-"typescript": "^2.4.2"
+    "typescript": "^4.4.4"
   }
 }
