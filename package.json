@@ -4,15 +4,10 @@
   "description": "Sample project using typescript to create a simple REST API with MySQL",
   "main": "server.js",
   "scripts": {
- 
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "html": "copyfiles --up 1 ./src/public/*.html ./dist/ && copyfiles --up 2 ./src/public/database/* ./dist/public",
-    "tsc": "./node_modules/typescript/bin/tsc",
-    "build": "tsc",
-    "postinstall": "npm run build",
-    "dev": "npm run build && nodemon dist"
+    "start": "node build/index.js",
+  "build": "tsc",
+  "postinstall": "npm run build"
   },
-  "postinstall": "npm run tsc",
   "author": "cristiancosano",
   "license": "ISC",
   "dependencies": {
