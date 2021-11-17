@@ -6,6 +6,7 @@ export default class MySQL{
     connection : mysql.Connection;
     connected: boolean = false;
 
+
     constructor(){
 
         this.connection = mysql.createConnection({
@@ -30,7 +31,7 @@ export default class MySQL{
                 callback(err);
             }
             else if(results.length===0){
-                callback('There is no record');
+                callback('There is no record 2');
             }
             else{
                 callback(null, results);
