@@ -21,7 +21,7 @@ router.get('/users', (req:Request, res:Response) => {
     });
 });
 
-router.get('/users/:id', (req:Request, res:Response) => {
+router.get('/bloodTest/:id', (req:Request, res:Response) => {
     const query = `SELECT * FROM users_laboratory_tests WHERE user_id=${MySQL.escape(req.params.id)}`
     MySQL.query(query, (err:Error, results:Object[]) => {
         if(err){
