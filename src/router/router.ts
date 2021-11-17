@@ -15,7 +15,7 @@ router.get('/users', (req:Request, res:Response) => {
         else {
             res.json({
                 ok: true,
-                heroes: results
+                users: results
             });
         }
     });
@@ -33,7 +33,7 @@ router.get('/bloodTest/:id', (req:Request, res:Response) => {
         else{
             res.json({
                 ok: true,
-                hero: results[0],
+                test: results,
             });
         }
     });
