@@ -9,9 +9,9 @@ export default class Server{
     constructor(port:number){
         this.port = port;
         this.app = express();
-    /*    this.app.use(cors({
+       this.app.use(cors({
             origin: '*'
-        }));*/
+        }));
     }
 
     static init (port:number){
